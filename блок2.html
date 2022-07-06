@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Блок 2</title>
+</head>
+<body>
+<div>Сводная таблица с данными</div>
+<table>
+    <tr>
+        <th></th>
+        <th>2019</th>
+        <th>2020</th>
+        <th>2021</th>
+    </tr>
+    <tr>
+        <td>Золото</td>
+        <td rowspan="2">5643</td>
+        <td>4533</td>
+        <td>7897</td>
+    </tr>
+    <tr>
+        <td>Бриллианты</td>
+        <td>31234</td>
+        <td>5432</td>
+    </tr>
+    <tr>
+        <td>Валюта</td>
+        <td>43533</td>
+        <td colspan="2">34533</td>
+    </tr>
+</table>
+<h1>Запись на курсы программирования</h1>
+
+<form name="prog" class="form"><hr>
+    <p><label for="name">Имя:</label><br>
+    <input type="text" placeholder="Денис" required id="name"></p>
+    <p><input type="radio" value="java" checked id="java"><label for="java">Java</label>
+        <input type="radio" value="c++" id="c++"><label for="c++">C++</label>
+    <input type="radio" value="python" id="pt"><label for="pt">Python</label>
+        <input type="radio" value="php" id="php"><label for="php">PHP</label>
+    <input type="radio" value="js" id="js"><label for="js"> JavaScript</label>
+    </p>
+    <p><label for="ta">Дополнительная информация:</label><br>
+        <textarea placeholder="Есть опыт программирования на Java" id="ta"></textarea>
+    </p>
+    <p><label for="pass">Секретное слово:</label><br>
+    <input type="password" placeholder="*****" required id="pass"></p>
+    <p><input type="checkbox" required id="rules"><label for="rules">С правилами ознакомлен и согласен</label></p>
+    <p><input type="submit" value="Отправить"> <input type="reset" value="Очистить"></p>
+    <hr>
+    <p>Made by Denis</p>
+</form>
+<div class="item">
+    <p style="text-align: right">6 Nov 2017</p>
+    <p><strong>Another title</strong></p>
+    <p>This  is the content of my news item. Very newsworthy.</p>
+</div>
+<div class="product">
+    <div class="card1"><h1>1</h1><div class="description">Card 1</div></div>
+    <div class="card3"><h1>3</h1><img src="pngwing.com.png" alt="Стрелка"><div class="description">Card 3</div></div>
+    <div class="card2"><h1>2</h1><div class="description">Card 2</div></div>
+</div>
+
+</body>
+</html>

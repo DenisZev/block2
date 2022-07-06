@@ -1,0 +1,88 @@
+table {
+    width: 45%;
+    border: 2px solid grey;
+}
+tr, td,th {
+    border: 2px solid grey;
+
+}
+div {
+    text-align: center;
+    width: 45%;
+}
+.form {
+    width: 45%;
+    text-align: left;
+}
+textarea {
+    width: 250px;
+    height: 60px;
+}
+.item {
+    background: #dee8ee;
+    border-radius: 10px;
+    border: 3px solid #598ca6;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.item p {
+    text-align: left;
+    font-size: 25px;
+    font-family: "Arial", serif;
+}
+.product {
+    display: inline-flex;
+    width: 80%;
+    height: 200px;
+
+    align-items: center;
+    font-family: Arial, serif;
+    margin: 5px 5px 25px;
+}
+.product h1 {
+    font-size: 85px;
+}
+.card1 {
+    background: #78c0da;
+    color: #333333;
+
+    margin-right: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+.card2 {
+    background: #e4be4a;
+    color: #f5f2f2;
+    margin-right: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+.card3 {
+    background: #37a25e;
+    color: #ffffff;
+    margin-right: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    border-radius: 2px;
+
+}
+.description {
+    margin: auto auto;
+    text-align: left;
+    padding: 5px;
+    background: white;
+    color: black;
+    font-size: 24px;
+    width: 100%;
+}
+.card3 img {
+    width: 25px;
+    height: 25px;
+    background: #78c0da;
+    padding: 10px;
+    border-radius: 35px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 5%;
+}
