@@ -1,0 +1,236 @@
+body {
+    display: inline-flex;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    font-family: Circe, serif;
+}
+
+.gallery {
+    background: #fdfdfe;
+    width: 250px;
+    height: 700px;
+}
+.gallery img{
+    width: 150px;
+    height: 200px;
+    display: block;
+    padding: 5%;
+}
+.arrow {
+    position: relative;
+    margin-left: 30%;
+    width: 27px;
+    height: 27px;
+    border: 3px solid gray;
+    border-radius: 50%;
+}
+.arrow:after {
+    position: absolute;
+    top: 8px;;
+    left: 9px;
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-left: 3px solid gray;
+    border-bottom: 3px solid gray;
+    transform: rotate(313deg);
+}
+.pic {
+    width: 50%;
+    height: 700px;
+    background: #fdfdfe;
+
+}
+.pic img {
+    margin: 25% auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.description {
+    width: 50%;
+    height: 700px;
+    background: #fbfcfd;
+}
+.description h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-style: initial;
+}
+.price {
+    display: inline-flex;
+    padding-top: 75px;
+    font-size: 20px;
+}
+.price p {
+    margin: 0 20px;
+}
+.price p:first-child {
+    margin-right: -5px;
+}
+.link a {
+    text-decoration: none;
+    color: rgba(43, 155, 253, 0.82);
+    margin-right: 25px;
+}
+
+.link a:last-child {
+    margin-right: 0;
+}
+.delivery img {
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+
+}
+.delivery {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 25px;
+}
+.buy {
+    width: 190px;
+    height: 45px;
+    background: #006be5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Circe, serif;
+    letter-spacing: 3px;
+    transition: 0.4s  linear;
+    margin-right: 45px;
+}
+.buy:hover {
+    background: #e5695e;
+    transition: 0.4s linear;
+}
+.favorite {
+    width: 190px;
+    height: 45px;
+    border: 2px solid gray;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Circe, serif;
+    transition: 0.3s linear;
+}
+.favorite:hover {
+    background: #a8a2a2;
+    transition: 0.4s ;
+    color: white;
+}
+.footer {
+    margin-top: 100px;
+}
+.footer p {
+    text-transform: uppercase;
+
+}
+.footer__soc {
+    display: inline-flex;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+
+
+.number {
+    user-select: none;
+    position: relative;
+    text-align: left;
+    padding: 0;
+    width: 140px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 15px;
+
+}
+.number-minus, .number-plus {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    background: #faf4f2;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Circe, serif;
+    color: #3e1e02;
+    text-decoration: none;
+}
+.number-minus {
+    left: 0;
+    border-right: 1px solid #ddd;
+}
+.number-plus {
+    right: 0;
+    border-left: 1px solid #ddd;
+}
+.number-minus:hover, .number-plus:hover {
+    background: #fffcfb;
+}
+.number-minus:active, .number-plus:active {
+    background: #e8e4e2;
+}
+.number-text{
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    line-height: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0 0 0 42px;
+    background: #fff;
+    outline: none;
+    border: none;
+    width: 57px;
+    text-align: center;
+}
+
+
+#popup {
+    background: #efefed;
+    border-radius: 10px;
+    width:300px;
+    height: 150px;
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 500;
+    display:none;
+    font-family: Circe, serif;
+    border: 1px solid black;
+}
+#topbar {
+
+    border-radius: 10px;
+    padding:5px; height:20px;
+    line-height:20px;
+    text-align: center;
+}
+#content {
+    padding:5px;
+    text-align:center; }
+#ok {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background: #006be5;
+    transition: 0.3s linear;
+
+}
+#ok:hover {
+    background: #e5695e;
+    transition: 0.3s linear;
+
+}

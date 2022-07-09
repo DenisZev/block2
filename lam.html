@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+    <title>Рубашка Medicine</title>
+</head>
+<body>
+<div class="gallery">
+    <img alt="Рубашка" src="рубашка.png" onclick="myFunction(this)">
+    <img alt="Рубашка" src="рубашка_3.png" onclick="myFunction(this)">
+    <img alt="Рубашка" src="рубашка_2.png" onclick="myFunction(this)">
+    <a href="#"><div class="arrow"></div></a>
+</div>
+
+<div class="pic"><img id="expandedImg" alt="Рубашка" src="рубашка.png"></div>
+
+<div class="description">
+    <h1>Рубашка Medicine</h1>
+    <div class="link">
+        <a href="#">Рубашки Medicine</a>
+        <a href="#">Все модели Medicine</a>
+        <a href="#">Рубашки</a>
+
+    </div>
+    <div class="price">
+        <p style="opacity: 0.4"><s>2699</s></p><p style="opacity: 0.5">2 499 Р</p><p><strong>2 227 Р</strong> - с промокодом</p>
+    </div>
+    <div class="delivery">
+        <p><img src="check.png" alt="✓">В наличии в магазине <a href="#">Lamoda</a></p>
+        <p><img src="car.png" alt="Грузовик">Бесплатная доставка</p>
+    </div>
+    <div class="number" data-step="1" data-min="1" data-max="100">
+        <input class="number-text" type="text" name="count" value="1">
+        <a href="#" class="number-minus">−</a>
+        <a href="#" class="number-plus">+</a>
+    </div>
+    <div class="submit">
+
+        <input type="submit" value="Купить" class="buy" id="pop">
+        <div id="popup">
+            <div id="topbar">Корзина</div>
+            <div id="content">В корзину добавлено <div id="val"></div>товаров.</div>
+            <input type="button" id="ok" value="OK"/>
+        </div>
+
+        <input type="button" value="В избранное" class="favorite">
+    </div>
+    <div class="footer">
+        Рубашка Medicine выполнена из вискозной ткани с клетчатым узором. Детали: прямой крой;
+        отложной воротник; планка и манжеты на пуговицах; карман на груди.<br>
+    <div class="footer__soc">
+        <p>Поделиться:</p>
+        <div class="social twitter">
+            <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        </div>
+        <div class="social facebook">
+            <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+        </div>
+        <div class="social vk">
+            <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+        </div>
+        <div class="social google-pluse">
+            <a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
