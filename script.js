@@ -1,48 +1,50 @@
-// селектор +-
+// счетчик +-
 $(document).ready(function() {
-	$('body').on('click', '.number-minus, .number-plus', function(){
-		var $row = $(this).closest('.number');
-		var $input = $row.find('.number-text');
-		var step = $row.data('step');
-		var val = parseFloat($input.val());
-
-		if ($(this).hasClass('number-minus')) {
-			val -= step;
-		} else {
-			val += step;
-		}
-
-		$input.val(val);
+	$('.minus').click(function () {
+		const $input = $(this).parent().find('input');
+		let count = parseInt($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
 		$input.change();
-
-		document.getElementById("val").innerHTML = val;
+		return false;
+	});
+	$('.plus').click(function () {
+		const $input = $(this).parent().find('input');
+		$input.val(parseInt($input.val()) + 1);
+		$input.change();
 		return false;
 	});
 
-	$('body').on('change', '.number-text', function(){
-		var $input = $(this);
-		var $row = $input.closest('.number');
-		var step = $row.data('step');
-		var min = parseInt($row.data('min'));
-		var max = parseInt($row.data('max'));
-		var val = parseFloat($input.val());
-		if (isNaN(val)) {
-			val = step;
-		} else if (min && val < min) {
-			val = min;
-		} else if (max && val > max) {
-			val = max;
-		}
-
-		$input.val(val);
-	});
 });
+
 // Для уведомления
 $(function(){
 	$('#pop').click(function(){
-		$('#popup').fadeIn().css('top',$(document).height()/2);
+		$('#popup').fadeIn().css('top',$(document).height()/3);
+		const val = document.querySelector('.text').value;
+		document.querySelector('#val').innerHTML = val;
+		function enumerate (num, dec) {
+			if (num > 100) num = num % 100;
+			if (num <= 20 && num >= 10) return dec[2];
+			if (num > 20) num = num % 10;
+			return num == 1 ? dec[0] : num > 1 && num < 5 ? dec[1] : dec[2];
+		}
+		document.querySelector('.lastChars').innerHTML = enumerate(val, ['','а','ов']);
 	});
 	$('#ok').click(function(){
 		$('#popup').fadeOut();
 	});
+
 });
+// Смена изображений
+
+const expandImg = document.querySelector('#expandedImg');
+let imgg = document.querySelectorAll('.product__gallery');
+console.log(imgg);
+
+$('.product__gallery').on('mouseenter', 'img', function (){
+	const imageUrl = $(this).attr('src');
+	expandImg.src = imageUrl;
+})
+
+
