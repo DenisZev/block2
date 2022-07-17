@@ -46,7 +46,8 @@ $('.product__gallery').on('mouseenter', 'img', function (){
 	const imageUrl = $(this).attr('src');
 	const backUrl = $(this).css('background', imageUrl)
 	expandImg.src = imageUrl;
-	$('.large').css({'background': 'url(' + imageUrl + ')'});
+	$('.large').css({'background': 'url(' + imageUrl + ')','background-size': '400%'});
+
 
 })
 

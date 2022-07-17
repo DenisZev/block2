@@ -238,7 +238,7 @@ body {
 }
 .large {
     background: url(shirt.png) no-repeat;
-    background-size: 420%;
+    background-size: 400%;
     position: absolute;
     display:none;
     width: 350px;
