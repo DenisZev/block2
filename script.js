@@ -54,7 +54,7 @@ $('.product__gallery').on('mouseenter', 'img', function (){
 // zoom
 
 $(document).ready(function(){
-	const zoomMargin = 50;
+	const zoomMargin = 15;
 
 	function startZoom(e) {
 		$('.large').css('left',  zoomMargin + '%').show();    // Контейнер c зумом появляется
@@ -68,7 +68,7 @@ $(document).ready(function(){
 			h = $(this).height(),              // Высота
 
 			// Позиционирование фона зума относительно того, куда указывает курсор на начальном изображении.
-			$('.large').css({'background-position': (x / w * 100) + '% ' + (y / h * 100) + '%'});
+			$('.large').css({'background-position': (x / w * 100) + '% ' + (y / h * 100) + '%', 'left': x,  'top': y});
 	}
 
 	function endZoom(e) {

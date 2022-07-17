@@ -16,7 +16,9 @@ body {
     justify-content: space-between;
 }
 
-
+.product__preview {
+    display: flex;
+}
 .product__gallery {
     background: #fdfdfe;
     width: 160px;
