@@ -47,9 +47,7 @@ $('.product__gallery').on('mouseenter', 'img', function (){
 	const backUrl = $(this).css('background', imageUrl)
 	expandImg.src = imageUrl;
 	$('.large').css({'background': 'url(' + imageUrl + ')'});
-	urlPic.background = imageUrl;
-	console.log(backUrl)
-	console.log(imageUrl)
+
 })
 
 // zoom
