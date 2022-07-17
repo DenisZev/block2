@@ -56,7 +56,7 @@ $(document).ready(function(){
 	const zoomMargin = 50;
 
 	function startZoom(e) {
-		$('.large').css('left', $(this).width() + zoomMargin).show();    // Контейнер c зумом появляется
+		$('.large').css('left',  zoomMargin + '%').show();    // Контейнер c зумом появляется
 	}
 
 	function moveZoom(e) {
@@ -67,7 +67,7 @@ $(document).ready(function(){
 			h = $(this).height(),              // Высота
 
 			// Позиционирование фона зума относительно того, куда указывает курсор на начальном изображении.
-			$('.large').css({'background-position': (x / w * 90) + '% ' + (y / h * 90) + '%'});
+			$('.large').css({'background-position': (x / w * 100) + '% ' + (y / h * 100) + '%'});
 	}
 
 	function endZoom(e) {

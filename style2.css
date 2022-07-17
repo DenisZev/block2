@@ -238,10 +238,11 @@ body {
 }
 .large {
     background: url(shirt.png) no-repeat;
+    background-size: 420%;
     position: absolute;
     display:none;
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 250px;
     z-index: 500;
-    zoom: 1.8;
+
 }
