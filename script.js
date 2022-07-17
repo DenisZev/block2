@@ -56,27 +56,27 @@ $(document).ready(function(){
 	const zoomMargin = 50;
 
 	function startZoom(e) {
-		$('.large').css('left', $(this).width() + zoomMargin).show();    // Контейнер у большим изображением становится видимым.
+		$('.large').css('left', $(this).width() + zoomMargin).show();    // Контейнер c зумом появляется
 	}
 
 	function moveZoom(e) {
-		const offset = $(this).offset(),       // В переменной offset хранятся координаты блока с миниатюрой
-			x = (e.pageX - offset.left),      // В переменной хранится координата X курсора мыши относительно блока с миниатюрой
+		const offset = $(this).offset(),       // В переменной offset хранятся координаты блока с начальным изображением
+			x = (e.pageX - offset.left),      // В переменной хранится координата X курсора мыши относительно блока с начальным изображением
 			y = (e.pageY - offset.top);        // Координата Y курсора мыши.
-			w = $(this).width(),               // Ширина миниатюры
-			h = $(this).height(),              // Высота миниатюры
+			w = $(this).width(),               // Ширина
+			h = $(this).height(),              // Высота
 
-			// Позиционирование фона большого изображения относительно того, куда указывает курсор на миниатюре.
+			// Позиционирование фона зума относительно того, куда указывает курсор на начальном изображении.
 			$('.large').css({'background-position': (x / w * 90) + '% ' + (y / h * 90) + '%'});
 	}
 
 	function endZoom(e) {
-		$('.large').hide();        // Контейнер с большим изображением скрывается
+		$('.large').hide();        // Контейнер изображением скрывается
 	}
 
 	$('#expandedImg').on({
-		'mouseenter': startZoom,  // При наведении мыши на миниатюру срабатывает функция startZoom
-		'mousemove': moveZoom,    // Когда курсор мыши перемещается внутри миниатюры срабатывает функция moveZoom
-		'mouseleave': endZoom     // Когда мышь уходит из области миниатюры срабатывает функция endZoom
+		'mouseenter': startZoom,
+		'mousemove': moveZoom,
+		'mouseleave': endZoom
 	});
 })
