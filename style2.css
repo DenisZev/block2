@@ -236,3 +236,12 @@ body {
     border-left: 20px solid #eeeeee;
     transform: rotate(180deg);
 }
+.large {
+    background: url(shirt.png) no-repeat;
+    position: absolute;
+    display:none;
+    width: 250px;
+    height: 150px;
+    z-index: 500;
+    zoom: 1.8;
+}
