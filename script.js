@@ -52,7 +52,6 @@ $('.product__gallery').on('mouseenter', 'img', function (){
 
 // zoom
 
-
 $(document).ready(function(){
 	const zoomMargin = 50;
 
